@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Application Template</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta name="viewport" content="initial-scale=1.0;
+		maximum-scale=1.0; user-scalable=no">
+		<link rel="stylesheet" href="styles/main.css">
+		<script src="scripts/main.js"></script>
+		<link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+		<link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+		<!-- Or in a style tag or stylesheet -->
+		<style>
+			.template {
+				display: none;
+			}
+		</style>
+		
+		
+		
+	</head>
+	<body>
+		<div class="view">
+			<div class="header-wrapper">
+				<h1>Web App Header</h1>
+			</div>
+			<div class="group-wrapper">
+				<h2>iPhone</h2>
+				<p>
+					Hello World!
+				</p>
+			</div>
+		</div>
+		<div class="header-wrapper">
+			<button class="header-button" onclick="init()">
+				Get
+			</button>
+		</div>
+		<div class="group-wrapper">
+			<h2>Twitter Trends</h2>
+			<ul id="trends" class="template">
+				<li>
+					<a href="#{url}">#{name}</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
